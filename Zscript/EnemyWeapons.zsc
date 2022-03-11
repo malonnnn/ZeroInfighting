@@ -1,0 +1,81 @@
+class EnemyBulletPuff : BulletPuff replaces BulletPuff{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyRocket : Rocket replaces Rocket{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyArachnotronPlasma : ArachnotronPlasma replaces ArachnotronPlasma{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyArchvileFire : ArchvileFire replaces ArchvileFire{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyBaronBall : BaronBall replaces BaronBall{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyCacodemonBall : CacodemonBall replaces CacodemonBall{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyDoomImpBall : DoomImpBall replaces DoomImpBall{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyFatShot : FatShot replaces FatShot{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}
+class EnemyRevenantTracer : RevenantTracer replaces RevenantTracer{
+  Default{
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +ALLOWTHRUFLAGS
+    +MTHRUSPECIES
+  }
+}

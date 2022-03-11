@@ -1,0 +1,177 @@
+class EnemyArachnotron : Arachnotron replaces Arachnotron{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyArchvile : Archvile replaces Archvile{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyBaronOfHell : BaronOfHell replaces BaronOfHell{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyCacodemon : Cacodemon replaces Cacodemon{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyChaingunGuy : ChaingunGuy replaces ChaingunGuy{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyCyberdemon : Cyberdemon replaces Cyberdemon{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyDemon : Demon replaces Demon{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyDoomImp : DoomImp replaces DoomImp{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyFatso : Fatso replaces Fatso{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyHellKnight : HellKnight replaces HellKnight{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyLostSoul : LostSoul replaces LostSoul{
+
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+    +DONTHARMCLASS
+  }
+
+  override bool Slam(Actor victim)
+  {
+    bSkullFly = false;
+    vel = (0, 0, 0);
+    if (health > 0)
+    {
+      if (!bDormant)
+      {
+        int dam = GetMissileDamage (7, 1);
+        int newdam = victim.DamageMobj (self, self, dam, "Enemy");
+        victim.TraceBleed (newdam > 0 ? newdam : dam, self);
+        if (health > 0)
+        {
+          if (SeeState != NULL && !bRetargetAfterSlam){
+            SetState (SeeState);
+          }else{
+            SetIdle();
+          }
+        }
+      }
+      else
+      {
+        SetIdle();
+        tics = -1;
+      }
+    }
+    return false;
+  }
+}
+
+class EnemyPainElemental : PainElemental replaces PainElemental{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyRevenant : Revenant replaces Revenant{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyShotgunGuy : ShotgunGuy replaces ShotgunGuy{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemySpectre : Spectre replaces Spectre{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemySpiderMastermind : SpiderMastermind replaces SpiderMastermind{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyWolfensteinSS : WolfensteinSS replaces WolfensteinSS{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+class EnemyZombieMan : ZombieMan replaces ZombieMan{
+  Default
+  {
+    Species "Enemy";
+    DamageType "Enemy";
+    DamageFactor "Enemy", 0.0;
+  }
+}
+
